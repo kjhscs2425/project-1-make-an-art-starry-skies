@@ -1,0 +1,46 @@
+
+turtle.exitonclick()
+
+import turtle
+numberofsides = 100
+
+def draw_turtle():
+    import turtle
+    turtle.speed(140)
+    turtle.pensize(4)
+    turtle.circle(r)
+for i in range (100):
+    r=100
+    draw_turtle()
+turtle.up()
+turtle.left(98)
+turtle.forward(230)
+turtle.down()
+for i in range(2):
+    for i in range(100):
+        r=1.5
+        draw_turtle()
+    turtle.right(90)
+    turtle.up()
+    turtle.forward(100)
+    turtle.down()
+turtle.teleport(-50,100)
+turtle.left(20)
+for i in range(50):
+    r=6
+    draw_turtle()
+turtle.left(89)
+turtle.forward(196)
+turtle.left(180)
+def draw_teeth():
+    for i in range(3):
+     turtle.forward(30)
+     turtle.right(360/3)
+for i in range(5):
+    draw_teeth()
+    turtle.forward(40)
+
+
+ 
+
+turtle.exitonclick()
