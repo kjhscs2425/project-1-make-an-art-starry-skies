@@ -18,13 +18,18 @@ for i in range (1):
 turtle.teleport(59,180)
 for i in range(2):
     radius=20
+    draw_turtle()
+    turtle.teleport(-69,180)
+turtle.teleport(-69,180)
+for i in range(2):
+    radius=14
     turtle.color("black")
     turtle.begin_fill()
     draw_turtle()
     turtle.end_fill()
-    turtle.teleport(-69,180)
-turtle.right(80)
+    turtle.teleport(57,180)
 turtle.teleport(-69,100)
+turtle.right(70)
 for i in range(1):
  turtle.circle(70,180)
 turtle.left(90)
@@ -37,7 +42,7 @@ def draw_teeth():
 for i in range(5):
     draw_teeth()
     turtle.forward(140/5)
-turtle.teleport(30,35)
+turtle.teleport(30,39)
 for i in range(2):
    turtle.left(180)
    draw_teeth()
