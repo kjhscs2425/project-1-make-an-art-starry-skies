@@ -45,20 +45,18 @@ def draw_petal():
    turtle.circle(diameter,angle+10)
    turtle.left(40)
    turtle.circle(diameter,angle)
-# for i in range (12):
-#    diameter=100
-#    angle=150
-#    draw_petal()
-#    turtle.right(19.75)
-#    turtle.forward(30)
-turtle.teleport(15,300)
-for i in range(8):
-  diameter=200
-  angle=144
-  draw_petal()
-  turtle.right(19.75)
-  turtle.forward(46)
+for i in range (12):
+   diameter=100
+   angle=150
+   draw_petal()
+   turtle.right(19.75)
+   turtle.forward(30)
 
+
+# turtle.teleport(50,-110)
+# turtle.right(90)
+# turtle.pensize(20)
+# turtle.forward(500)
    
 turtle.exitonclick()
 
