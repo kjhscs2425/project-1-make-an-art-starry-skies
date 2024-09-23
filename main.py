@@ -18,7 +18,10 @@ for i in range (1):
 turtle.teleport(59,180)
 for i in range(2):
     radius=20
+    turtle.color("black")
+    turtle.begin_fill()
     draw_turtle()
+    turtle.end_fill()
     turtle.teleport(-69,180)
 turtle.right(80)
 turtle.teleport(-69,100)
@@ -48,17 +51,10 @@ def draw_petal():
 for i in range (12):
    diameter=100
    angle=150
+   turtle.color("black")
+   turtle.begin_fill()
    draw_petal()
+   turtle.end_fill()
    turtle.right(19.75)
    turtle.forward(30)
-
-
-# turtle.teleport(50,-110)
-# turtle.right(90)
-# turtle.pensize(20)
-# turtle.forward(500)
-   
 turtle.exitonclick()
-
-
-t
