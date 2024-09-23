@@ -51,10 +51,15 @@ def draw_petal():
 for i in range (12):
    diameter=100
    angle=150
-   turtle.color("black")
-   turtle.begin_fill()
-   draw_petal()
-   turtle.end_fill()
-   turtle.right(19.75)
-   turtle.forward(30)
+   if i%2==0:
+      turtle.color("black")
+      turtle.begin_fill()
+      draw_petal()
+      turtle.end_fill()
+      turtle.right(19.75)
+      turtle.forward(30)
+   if i%2 != 0:
+      draw_petal()
+      turtle.right(19.75)
+      turtle.forward(30)
 turtle.exitonclick()
