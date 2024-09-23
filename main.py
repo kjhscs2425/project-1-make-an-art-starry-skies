@@ -38,28 +38,16 @@ for i in range(2):
    turtle.left(180)
    turtle.backward(30)
 turtle.teleport(0,300)
-# for i in range (1):
-#    turtle.circle(90,150)
-#    turtle.forward(30)
-#    turtle.left(90)
-#    turtle.forward(30)
-#    turtle.circle(90,150)
-#    turtle.left(90)
-#    turtle.forward(30)
-#    turtle.circle(90,150)
-#    turtle.forward(30)
-#       turtle.left(60)
-#    turtle.forward(30)
-#    turtle.circle(90,180)
-
-
-
-  
-
-
-    
-
-
+def draw_petal():
+   turtle.circle(100,140)
+   turtle.forward(44)
+   turtle.left(90)
+   turtle.forward(66)
+   turtle.circle(100,105)
+for i in range (5):
+   draw_petal()
+   turtle.forward(10)
+   turtle.down(20)
 
 
 turtle.exitonclick()
