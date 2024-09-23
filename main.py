@@ -2,6 +2,9 @@
 
 import turtle
 numberofsides = 100
+height=2000
+width=2000
+turtle.screensize(width,height)
 
 def draw_turtle():
     import turtle
@@ -39,15 +42,14 @@ for i in range(2):
    turtle.backward(30)
 turtle.teleport(0,300)
 def draw_petal():
+   numberofsides=100
    turtle.circle(100,140)
    turtle.forward(44)
    turtle.left(90)
    turtle.forward(66)
-   turtle.circle(100,105)
-for i in range (5):
+   turtle.circle(100,99)
+for i in range (20):
    draw_petal()
-   turtle.forward(10)
-   turtle.down(20)
-
-
+   turtle.left(11)
+   turtle.forward(50)
 turtle.exitonclick()
