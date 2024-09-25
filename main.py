@@ -1,5 +1,4 @@
 
-
 import turtle
 numberofsides = 100
 turtle.speed(10)
@@ -69,4 +68,19 @@ for i in range (11):
       draw_petal()
       turtle.right(right)
       turtle.forward(40)
+def draw_stem():
+   turtle.pensize(8)
+   turtle.teleport(10,0)
+   turtle.right(107)
+   turtle.forward(330)
+draw_stem()
+for i in range(2):
+   diameter=40
+   angle=130
+   turtle.pensize(4)
+   turtle.teleport(10,-200)
+   turtle.left(30)
+   draw_petal()
+   turtle.right(30)
+   
 turtle.exitonclick()
