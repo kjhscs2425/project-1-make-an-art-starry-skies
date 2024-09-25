@@ -12,6 +12,7 @@ def draw_turtle():
     turtle.circle(radius)
     turtle.right(360/numberofsides)
 for i in range (1):
+    #radius can be any value
     radius=150
     draw_turtle()
 turtle.teleport(59,180)
@@ -31,9 +32,9 @@ turtle.teleport(-69,100)
 turtle.right(70)
 for i in range(1):
  turtle.circle(70,180)
-turtle.left(90)
-turtle.forward(140)
-turtle.left(180)
+ turtle.left(90)
+ turtle.forward(140)
+ turtle.left(180)
 def draw_teeth():
     for i in range(3):
      turtle.forward(30)
@@ -53,6 +54,7 @@ def draw_petal(diameter):
    turtle.left(40)
    turtle.circle(diameter,angle)
 for i in range (11):
+   #angle can be any value
    angle=150
    right=21.4
    turtle.pensize(5)
