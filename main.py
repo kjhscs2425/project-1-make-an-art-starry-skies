@@ -48,24 +48,23 @@ for i in range(2):
    turtle.left(180)
    turtle.backward(30)
 turtle.teleport(-10,300)
-def draw_petal():
+def draw_petal(diameter):
    turtle.circle(diameter,angle+10)
    turtle.left(40)
    turtle.circle(diameter,angle)
 for i in range (11):
-   diameter=88
    angle=150
    right=21.4
    turtle.pensize(5)
    if i%2==0:
       turtle.color("black")
       turtle.begin_fill()
-      draw_petal()
+      draw_petal(78)
       turtle.end_fill()
       turtle.right(right)
       turtle.forward(40)
    if i%2 != 0:
-      draw_petal()
+      draw_petal(98)
       turtle.right(right)
       turtle.forward(40)
 def draw_stem():
@@ -75,12 +74,11 @@ def draw_stem():
    turtle.forward(330)
 draw_stem()
 for i in range(2):
-   diameter=40
    angle=130
    turtle.pensize(4)
    turtle.teleport(10,-200)
    turtle.left(30)
-   draw_petal()
+   draw_petal(40)
    turtle.right(30)
    
 turtle.exitonclick()
