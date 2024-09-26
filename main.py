@@ -12,12 +12,12 @@ def draw_turtle():
     turtle.circle(radius)
     turtle.right(360/numberofsides)
 for i in range (1):
-    #radius can be any value
     radius=150
     draw_turtle()
 turtle.teleport(59,180)
 for i in range(2):
     radius=20
+    #radius can be any value (e.g 30, 40) depending on how big you want the eyes to be
     draw_turtle()
     turtle.teleport(-69,180)
 turtle.teleport(-69,180)
@@ -54,19 +54,20 @@ def draw_petal(diameter):
    turtle.left(40)
    turtle.circle(diameter,angle)
 for i in range (11):
-   #angle can be any value
    angle=150
    right=21.4
+   #size can be any value (e.g 80, 100)
+   size=78
    turtle.pensize(5)
    if i%2==0:
       turtle.color("black")
       turtle.begin_fill()
-      draw_petal(78)
+      draw_petal(size)
       turtle.end_fill()
       turtle.right(right)
       turtle.forward(40)
    if i%2 != 0:
-      draw_petal(98)
+      draw_petal(size+20)
       turtle.right(right)
       turtle.forward(40)
 def draw_stem():
