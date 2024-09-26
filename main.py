@@ -82,5 +82,6 @@ for i in range(2):
    turtle.left(30)
    draw_petal(40)
    turtle.right(30)
+
    
 turtle.exitonclick()
